@@ -1,0 +1,277 @@
+
+SRS
+
+1. Introduction
+1.1 Purpose
+
+TradeLab is a web-based stock market simulation platform designed to provide users with a realistic environment for practicing stock trading using virtual money.
+
+The system allows users to monitor market data, place simulated orders, manage portfolios, analyze trading performance, and participate in trading challenges.
+
+1.2 Scope
+
+The system will provide:
+
+User registration and authentication
+Market monitoring
+Stock search
+Historical price visualization
+Virtual portfolio management
+Simulated stock trading
+Order management
+P&L calculation
+Trading analytics
+Watchlists
+Trading journal
+Leaderboards
+Trading challenges
+Administrative management
+
+The system will not execute real financial transactions.
+
+30. Functional Requirements
+FR-01 — User Registration
+
+The system shall allow users to create an account using valid registration information.
+
+FR-02 — User Authentication
+
+The system shall authenticate users before allowing access to protected functionality.
+
+FR-03 — Profile Management
+
+Users shall be able to view and update their profile.
+
+FR-04 — Market Data
+
+The system shall display available stock and index market information.
+
+FR-05 — Stock Search
+
+Users shall be able to search for stocks by name or symbol.
+
+FR-06 — Stock Details
+
+The system shall display detailed information about selected stocks.
+
+FR-07 — Price Charts
+
+The system shall display historical price charts for supported securities.
+
+FR-08 — Watchlist
+
+Users shall be able to add and remove securities from their watchlist.
+
+FR-09 — Virtual Wallet
+
+The system shall assign virtual starting capital to each new user.
+
+FR-10 — Buy Orders
+
+Users shall be able to place simulated buy orders.
+
+FR-11 — Sell Orders
+
+Users shall be able to place simulated sell orders.
+
+FR-12 — Market Orders
+
+The system shall support simulated market orders.
+
+FR-13 — Limit Orders
+
+The system shall support simulated limit orders.
+
+FR-14 — Stop-Loss Orders
+
+The system shall support simulated stop-loss orders.
+
+FR-15 — Order Validation
+
+The system shall validate orders before execution.
+
+FR-16 — Portfolio
+
+The system shall maintain user holdings and calculate portfolio value.
+
+FR-17 — P&L
+
+The system shall calculate realized and unrealized profit/loss.
+
+FR-18 — Transaction History
+
+The system shall maintain a record of portfolio transactions.
+
+FR-19 — Order History
+
+The system shall maintain a record of submitted orders and their statuses.
+
+FR-20 — Trading Analytics
+
+The system shall calculate trading performance metrics.
+
+FR-21 — Trading Journal
+
+Users shall be able to record reasoning and notes associated with trades.
+
+FR-22 — Challenges
+
+Users shall be able to join available trading challenges.
+
+FR-23 — Leaderboard
+
+The system shall rank participants based on predefined performance metrics.
+
+FR-24 — Notifications
+
+The system shall notify users of relevant trading events.
+
+FR-25 — Administration
+
+Administrators shall be able to manage users, market data, and challenges.
+
+31. Non-Functional Requirements
+Performance
+Dashboard should load within a reasonable time.
+API responses should be optimized.
+Market updates should be delivered with minimal delay.
+Security
+Passwords must be securely hashed.
+Authentication tokens must be protected.
+Protected APIs must require authentication.
+Users must not be able to access another user's portfolio.
+Reliability
+
+The application should handle invalid orders gracefully without corrupting wallet or portfolio data.
+
+Scalability
+
+The architecture should allow additional users, stocks, and trading competitions to be added.
+
+Usability
+
+The interface should be responsive and easy to understand.
+
+Maintainability
+
+Frontend, backend, database, and business logic should be separated into logical modules.
+
+32. User Roles
+Role	Capabilities
+User	Trade, manage portfolio, watchlist, analytics, journal
+Admin	Manage users, market data, challenges and system
+33. MVP vs Advanced Features
+
+This is very important for your October deadline.
+
+Don't attempt everything immediately.
+
+🟢 Phase 1 — MUST HAVE
+
+Build these first:
+
+Registration/Login
+Dashboard
+Market indices
+Stock search
+Stock details
+Charts
+Virtual wallet
+Buy/Sell
+Portfolio
+P&L
+Order history
+Transaction history
+Watchlist
+
+That alone is a solid semester project.
+
+🟡 Phase 2 — SHOULD HAVE
+
+Then add:
+
+Limit orders
+Stop-loss
+Notifications
+Trading analytics
+Admin dashboard
+Trading journal
+
+🔴 Phase 3 — ADVANCED
+
+Only if Phase 1 and 2 are stable:
+
+Backtesting
+Trading challenges
+Leaderboard
+Risk analysis
+Technical indicators
+Historical market replay
+34. The final demo I'd recommend
+
+Your faculty presentation can follow this exact sequence:
+
+1. Register user
+       ↓
+2. Receive ₹10,00,000 virtual capital
+       ↓
+3. Open NIFTY/SENSEX dashboard
+       ↓
+4. Search RELIANCE
+       ↓
+5. Open live/historical chart
+       ↓
+6. Place BUY order
+       ↓
+7. Backend validates order
+       ↓
+8. Portfolio gets updated
+       ↓
+9. Price changes
+       ↓
+10. P&L changes
+       ↓
+11. Set stop-loss
+       ↓
+12. Order automatically executes
+       ↓
+13. View trading analytics
+       ↓
+14. View trading journal
+       ↓
+15. Show leaderboard
+
+That gives the faculty a complete end-to-end demonstration rather than showing disconnected CRUD pages.
+
+
+
+
+WEEK WIAE WORK-
+
+Week 1
+
+Setup + Authentication
+
+Week 2
+
+Market dashboard + Stock data + Charts
+
+Week 3
+
+Trading engine + Buy/Sell
+
+Week 4
+
+Portfolio + P&L + Orders
+
+Week 5
+
+Watchlist + Notifications + Analytics
+
+Week 6
+
+Advanced feature + UI polishing
+
+Week 7
+
+Testing + Deployment + Documentation + PPT + Demo preparation

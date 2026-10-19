@@ -1,0 +1,21 @@
+Great. ✅ The navigation structure is now working cleanly.
+
+Your next step should be UI polish, starting with the Portfolio page. Right now the functionality is correct, but it's still displaying as a list of <p> elements.
+
+We'll turn it into a proper trading-style dashboard:
+
+┌─────────────────────────────────────────────────────────┐
+│ My Portfolio                                            │
+│                                                         │
+│ Available Cash              ₹997,530                   │
+│ Total Invested              ₹2,470                     │
+│ Current Value               ₹2,480.80                  │
+│ Total P&L                   +₹10.80 (+0.44%)           │
+├─────────────────────────────────────────────────────────┤
+│ Stock     Qty    Avg Price   Current   Value    P&L    │
+│ RELIANCE   2      ₹1,235     ₹1,240    ₹2,481   +₹10.8 │
+└─────────────────────────────────────────────────────────┘
+
+Then we'll do the same for Transaction History, and finally improve the Dashboard.
+
+That will give you a much more complete and presentable TradeLab project rather than just a functional prototype.
